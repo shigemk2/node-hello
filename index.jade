@@ -6,4 +6,18 @@ html
     link(rel="stylesheet" href="style.css")
   body
     h1= title
-    p= msg
+    p= msg + '(' + form.myname + ',' + form.mail + ',' + form.age + ')'
+    form(method='post' ,action='/')
+      table
+        tr
+          td
+            input(type='text',name='myname',value=form.myname)
+        tr
+          td
+            input(type='text',name='mail',value=form.mail)
+        tr
+          td
+            input(type='text',name='age',value=form.age)
+        tr
+          td
+            input(type='submit')
