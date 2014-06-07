@@ -1,12 +1,11 @@
-doctype
-html
-  head
-    meta(charset="utf-8")
-    title サンプル
-    link(rel="stylesheet" href="style.css")
-  body
-    include include/header_file
-
-    p これはindexの内容です
-    
-    include include/footer_file
+extends include/base_file
+block title
+  これは新しいタイトルです
+block msg
+  これは新しいメッセージです
+block content
+  p this is content.
+  p これがコンテンツです
+block footer
+  span copyright 2014 shigemk2
+  

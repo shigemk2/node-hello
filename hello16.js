@@ -19,7 +19,7 @@ function doRequest(req, res) {
     switch(path.pathname) {
     case '/':
         var fn = jade.compile(index, {
-            filename:'inclide',
+            filename:'include',
             rootpath: __dirname
         });
 
