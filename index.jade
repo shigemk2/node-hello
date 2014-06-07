@@ -24,8 +24,19 @@ html
     hr
     table
       for item, index in datas
-        tr
-          td= index + 1
-          td= item.myname
-          td= item.mail
-          td= item.age
+        case index % 3
+          when 0
+            tr(style='color:red')
+              td= item.myname
+              td= item.mail
+              td= item.age
+          when 1
+            tr(style='color:green')
+              td= item.myname
+              td= item.mail
+              td= item.age
+          when 2
+            tr(style='color:blue')
+              td= item.myname
+              td= item.mail
+              td= item.age
