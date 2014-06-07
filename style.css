@@ -17,3 +17,13 @@ td {
     padding: 5px;
     background-color: #fff;
 }
+
+p.header {
+    font-size: 14px;
+    font-weight: bold;
+}
+p.footer {
+    font-size:9pt;
+    text-align:right;
+    border-bottom: 1px solid #006600;
+}

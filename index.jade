@@ -5,38 +5,8 @@ html
     title サンプル
     link(rel="stylesheet" href="style.css")
   body
-    h1= title
-    p=msg
-    form(method='post' ,action='/')
-      table
-        tr
-          td
-            input(type='text',name='myname',value=form.myname)
-        tr
-          td
-            input(type='text',name='mail',value=form.mail)
-        tr
-          td
-            input(type='text',name='age',value=form.age)
-        tr
-          td
-            input(type='submit')
-    hr
-    table
-      for item, index in datas
-        case index % 3
-          when 0
-            tr(style='color:red')
-              td= item.myname
-              td= item.mail
-              td= item.age
-          when 1
-            tr(style='color:green')
-              td= item.myname
-              td= item.mail
-              td= item.age
-          when 2
-            tr(style='color:blue')
-              td= item.myname
-              td= item.mail
-              td= item.age
+    include inclide/header_file
+
+    p これはindexの内容です
+    
+    include inclide/footer_file
