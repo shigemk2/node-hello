@@ -6,7 +6,7 @@ html
     link(rel="stylesheet" href="style.css")
   body
     h1= title
-    p= msg + '(' + form.myname + ',' + form.mail + ',' + form.age + ')'
+    p=msg
     form(method='post' ,action='/')
       table
         tr
@@ -21,3 +21,11 @@ html
         tr
           td
             input(type='submit')
+    hr
+    table
+      for item, index in datas
+        tr
+          td= index + 1
+          td= item.myname
+          td= item.mail
+          td= item.age
